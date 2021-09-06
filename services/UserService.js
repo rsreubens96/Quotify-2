@@ -1,4 +1,4 @@
-const { models } = require("../models/");
+const { models } = require("../sequelize");
 
 const registerUser = async () => {
     console.log("REGISTEIRNG!");

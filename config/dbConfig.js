@@ -1,3 +1,4 @@
+// Database connection setup
 module.exports = {
     HOST: "localhost",
     USER: "postgres",

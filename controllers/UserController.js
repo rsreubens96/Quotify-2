@@ -1,4 +1,6 @@
-const User = require("../models/User");
+/**
+ * Controller for the user endpoint
+ */
 const UserService = require("../services/UserService");
 
 const register = async (req, res) => {
