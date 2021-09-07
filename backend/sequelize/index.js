@@ -15,13 +15,14 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 });
 
 const modelDefiners = [
-    require("./User"),
+    require("./models/User"),
+    require("./models/Quote"),
     // Add more models here...
     // require('./models/item'),
 ];
 
 const sync = async () => {
-    await sequelize.sync({ force: true });
+    await sequelize.sync();
 };
 
 // We define all models according to their files.
