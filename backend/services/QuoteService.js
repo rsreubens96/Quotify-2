@@ -11,6 +11,7 @@ const createQuote = async (quote) => {
         .catch((err) => {
             return err;
         });
+
     return insert;
 };
 
